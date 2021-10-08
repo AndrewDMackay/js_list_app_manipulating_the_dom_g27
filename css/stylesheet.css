@@ -1,11 +1,25 @@
 
+html {
+    margin: 0vw;
+}
+
 body {
     font-family: 'Amatic SC', cursive;
     font-weight: bold;
     font-size: 0.8vw;
     background-color: ghostwhite;
     color: slategrey;
-    margin: 4vw;
+    margin: 0vw;
+}
+
+.base-container {
+    margin-top: 5.0vw;
+    margin-left: 40.0vw;
+    margin-right: 35.0vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
 }
 
 
@@ -62,7 +76,7 @@ label::after {
 .wine-list-item {
     margin: 1.0vw 1.0vw;
     padding: 1.0vw 1.0vw;
-    border: 1.0vw solid lightslategrey;
+    border: 0.1vw solid lightslategrey;
     border-radius: 0.25vw;
     background: whitesmoke;
 }

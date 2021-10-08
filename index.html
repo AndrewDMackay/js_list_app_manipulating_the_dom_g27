@@ -11,60 +11,62 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css" />
   </head>
   <body>
-    <h1>WINES OF THE YEAR..</h1>
-    <h4>ENTER YOUR DATA HERE..</h4>
-    <form id="new-item-form">
-      <div id="form-container">
-        <div class="form-item">
-          <label for="wine" class="primary">WINE</label>
-          <input type="text" id="wine" required/>
+    <div class="base-container">
+        <h1>[ WINES OF THE YEAR ]</h1>
+        <h4>[ ENTER YOUR DATA HERE.. ]</h4>
+        <form id="new-item-form">
+        <div id="form-container">
+            <div class="form-item">
+            <label for="wine" class="primary">WINE</label>
+            <input type="text" id="wine" required/>
+            </div>
+            <br>
+            <div class="form-item">
+            <label for="producer" class="primary">PRODUCER</label>
+            <input type="text" id="producer" required/>
+            </div>
+            <br>
+            <div class="form-item">
+                <label for="vintage" class="primary">VINTAGE</label>
+                <input type="text" id="vintage" required/>
+            </div>
+            <br>
+            <div class="form-item">
+                <h4>[ WINE TYPE.. ]</h4>
+                <label for="sparkling" class="primary">SPARKLING</label>
+                <input type="radio" id="sparkling" name="type" value="sparkling">
+                <label for="white" class="primary">WHITE</label>
+                <input type="radio" id="white" name="type" value="white">
+                <label for="orange" class="primary">ORANGE</label>
+                <input type="radio" id="orange" name="type" value="orange">
+                <label for="rose" class="primary">ROSE</label>
+                <input type="radio" id="rose" name="type" value="rose">
+                <label for="red" class="primary">RED</label>
+                <input type="radio" id="red" name="type" value="red">
+            </select>
+            </div>
+            <br>
+            <div class="form-item">
+                <h4>[ CERTIFICATION.. ]</h4>
+                <label for="natural" class="primary">NATURAL</label>
+                <input type="radio" id="natural" name="certification" value="natural">
+                <label for="organic" class="primary">ORGANIC</label>
+                <input type="radio" id="organic" name="certification" value="organic">
+                <label for="biodynamic" class="primary">BIODYNAMIC</label>
+                <input type="radio" id="biodynamic" name="certification" value="biodynamic">
+            </div>
+            <br>
         </div>
+        <input type="submit" value="save"/>
         <br>
-        <div class="form-item">
-          <label for="producer" class="primary">PRODUCER</label>
-          <input type="text" id="producer" required/>
-        </div>
+        </form>
+        <button id="delete-all">DELETE ALL..</button>
         <br>
-        <div class="form-item">
-            <label for="vintage" class="primary">VINTAGE</label>
-            <input type="text" id="vintage" required/>
-          </div>
-          <br>
-        <div class="form-item">
-            <h4>WINE TYPE..</h4>
-            <label for="sparkling" class="primary">SPARKLING</label>
-            <input type="radio" id="sparkling" name="type" value="sparkling">
-            <label for="white" class="primary">WHITE</label>
-            <input type="radio" id="white" name="type" value="white">
-            <label for="orange" class="primary">ORANGE</label>
-            <input type="radio" id="orange" name="type" value="orange">
-            <label for="rose" class="primary">ROSE</label>
-            <input type="radio" id="rose" name="type" value="rose">
-            <label for="red" class="primary">RED</label>
-            <input type="radio" id="red" name="type" value="red">
-          </select>
-        </div>
+        <h1>[ TOP WINES 2021 ] </h1>
         <br>
-        <div class="form-item">
-            <h4>CERTIFICATION..</h4>
-            <label for="natural" class="primary">NATURAL</label>
-            <input type="radio" id="natural" name="certification" value="natural">
-            <label for="organic" class="primary">ORGANIC</label>
-            <input type="radio" id="organic" name="certification" value="organic">
-            <label for="biodynamic" class="primary">BIODYNAMIC</label>
-            <input type="radio" id="biodynamic" name="certification" value="biodynamic">
-        </div>
+        <ul id="wine-list"></ul>
         <br>
-      </div>
-      <input type="submit" value="save"/>
-      <br>
-    </form>
-    <button id="delete-all">DELETE ALL..</button>
-    <br>
-    <h1>TOP WINES..</h1>
-    <br>
-    <ul id="wine-list"></ul>
-    <br>
+    </div>
   </body>
 </html>
 
