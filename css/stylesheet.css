@@ -8,10 +8,12 @@ body {
     margin: 4vw;
 }
 
+
 h1 {
     font-size: 5.0vw;
 }
   
+
   #form-container {
     width: 75vw;
     display: flex;
@@ -19,6 +21,7 @@ h1 {
     align-content: center;
 }
   
+
 .form-item {
     align-content: center;
     margin-right: 1.5vw;
@@ -33,13 +36,6 @@ label::after {
     content: ":";
 }
   
-button, input[type="submit"] {
-    margin-top: 1.0vw;
-    font-family: 'Amatic SC', cursive;
-    font-weight: bold;
-    border: 0.1vw solid lightslategrey;
-    background-color: slategrey;
-}
   
 #wine-list {
     display: flex;
@@ -47,12 +43,69 @@ button, input[type="submit"] {
     list-style-type: none;
 }
   
+
 .wine-list-item {
     margin: 1.0vw 1.0vw;
     padding: 1.0vw 1.0vw;
     border: 1.0vw solid lightslategrey;
-    border-radius: 1.0vw;
+    border-radius: 0.25vw;
     background: whitesmoke;
 }
 
+
+input, select {
+    margin-top: 1.0vw;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    border: 0.1vw solid slategrey;
+    background-color: whitesmoke;
+    border-radius: 0.25vw;
+}
+
+button, input[type="submit"] {
+    margin-top: 1.0vw;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    border: 0.1vw solid slategrey;
+    background-color: whitesmoke;
+    border-radius: 0.25vw;
+}
+
+
+/* Radio buttons.. */
+
+input[type="radio"] {
+    visibility: hidden;
+    }
+  
+  
+input[type="radio"]:after {
+    width: 1vw;
+    height: 1.0vw;
+    border-radius: 1.0vw;
+    top: -0.5vw;
+    left: -0.5vw;
+    position: relative;
+    background-color: whitesmoke;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 0.1vw solid slategrey;
+  }
+  
+
+input[type="radio"]:checked:after {
+    width: 1.0vw;
+    height: 1.0vw;
+    border-radius: 1.0vw;
+    top: -0.5vw;
+    left: -0.5vw;
+    position: relative;
+    background-color: lightsteelblue;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 0.1vw solid slategrey;
+  }
+  
   
