@@ -1,4 +1,5 @@
 
+
 // EventListeners..
 
 // addEventListener, main 'DOMContentLoaded', and individual variables tied to querySelector, their own addEventListener, and functions..
@@ -31,23 +32,23 @@ document.addEventListener('DOMContentLoaded', () => {
   
     const wine = document.createElement('h2');
     wine.textContent = form.wine.value;
-    wineListItem.appendChild('wine');
+    wineListItem.appendChild(wine);
   
     const producer = document.createElement('h3');
     producer.textContent = form.producer.value;
-    wineListItem.appendChild('producer');
+    wineListItem.appendChild(producer);
 
     const vintage = document.createElement('h4');
     vintage.textContent = form.vintage.value;
-    wineListItem.appendChild('vintage');
+    wineListItem.appendChild(vintage);
   
     const type = document.createElement('p');
     type.textContent = form.type.value;
-    wineListItem.appendChild('type');
+    wineListItem.appendChild(type);
 
     const certification = document.createElement('p');
     certification.textContent = form.certification.value;
-    wineListItem.appendChild('certification');
+    wineListItem.appendChild(certification);
   
     return wineListItem;
   }
