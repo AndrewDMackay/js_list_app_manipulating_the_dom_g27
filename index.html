@@ -11,7 +11,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css" />
   </head>
   <body>
-    <h1>ENTER YOUR DATA HERE</h1>
+    <h1>WINES OF THE YEAR..</h1>
+    <h4>ENTER YOUR DATA HERE..</h4>
     <form id="new-item-form">
       <div id="form-container">
         <div class="form-item">
@@ -30,18 +31,22 @@
           </div>
           <br>
         <div class="form-item">
-          <label for="type" class="primary">TYPE</label>
-          <select id="type">
-            <option value="" disabled selected></option>
-            <option value="sparkling">SPARKLING</option>
-            <option value="white">WHITE</option>
-            <option value="orange">ORANGE</option>
-            <option value="rose">ROSE</option>
-            <option value="red">RED</option>
+            <h4>WINE TYPE..</h4>
+            <label for="sparkling" class="primary">SPARKLING</label>
+            <input type="radio" id="sparkling" name="type" value="sparkling">
+            <label for="white" class="primary">WHITE</label>
+            <input type="radio" id="white" name="type" value="white">
+            <label for="orange" class="primary">ORANGE</label>
+            <input type="radio" id="orange" name="type" value="orange">
+            <label for="rose" class="primary">ROSE</label>
+            <input type="radio" id="rose" name="type" value="rose">
+            <label for="red" class="primary">RED</label>
+            <input type="radio" id="red" name="type" value="red">
           </select>
         </div>
         <br>
         <div class="form-item">
+            <h4>CERTIFICATION..</h4>
             <label for="natural" class="primary">NATURAL</label>
             <input type="radio" id="natural" name="certification" value="natural">
             <label for="organic" class="primary">ORGANIC</label>
@@ -54,9 +59,9 @@
       <input type="submit" value="save"/>
       <br>
     </form>
-    <button id="delete-all">Delete All</button>
+    <button id="delete-all">DELETE ALL..</button>
     <br>
-    <h1>TOP WINES</h1>
+    <h1>TOP WINES..</h1>
     <br>
     <ul id="wine-list"></ul>
     <br>
